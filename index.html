@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>This is live Code-editor</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0eda03282f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <label class="lable">
+          <div class="html-lable comman-lable">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              HTML
+            </div>
+            <div class="inside">
+              <div id="html-lock-toggle">Lock</div>
+              <div id="copy-html">Copy</div>
+            </div>
+          </div>
+        </label>
+
+        <textarea id="html-code" onkeyup="run()"> </textarea>
+
+        <label>
+          <div class="comman-lable">
+            <div>
+              <i class="fa-brands fa-css3-alt"></i>
+              CSS
+            </div>
+            <div class="inside">
+              <div id="css-lock-toggle">Lock</div>
+              <div id="copy-css">Copy</div>
+            </div>
+          </div>
+        </label>
+
+        <textarea id="css-code" onkeyup="run()"> </textarea>
+
+        <label>
+          <div class="comman-lable">
+            <div>
+              <i class="fa-brands fa-js"></i>
+              JAVASCRIPT
+            </div>
+            <div class="inside">
+              <div id="js-lock-toggle">Lock</div>
+              <div id="copy-js">Copy</div>
+            </div>
+          </div>
+        </label>
+
+        <textarea id="js-code" onkeyup="run()"> </textarea>
+      </div>
+      <div class="right">
+        <label> OUTPUT <i class="fa-solid fa-play"></i> </label>
+        <iframe id="output"> </iframe>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
